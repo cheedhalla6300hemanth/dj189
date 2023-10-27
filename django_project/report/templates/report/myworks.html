@@ -1,0 +1,23 @@
+{% extends 'report/base.html' %}
+    {% block content %}
+    <h1>hi ra hemanth</h1>
+    {% for w in mw %}
+    <table>
+  <tr>
+       <th>Category   </th>
+       <th>DOC   </th>
+       <th>price   </th>
+       <th>rating  </th>
+       <th>inspiration  </th>
+  </tr>
+  <tr>
+      <td><h3>{{ w.category }}</h3></td>
+      <td><h3>{{ w.doc }}</h3></td>
+      <td><h3>{{ w.price }}</h3></td>
+      <td><h3>{{ w.rating }}</h3></td>
+      <td><h3>{{ w.inspiration }}</h3></td>
+  </tr>
+</table>
+
+    {% endfor %}
+    {% endblock %}

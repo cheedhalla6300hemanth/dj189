@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'report/css/styles.css' %}">
+    <meta charset="UTF-8">
+    <title>MY_WORKS</title>
+</head>
+<body>
+<img src="{% static 'report/images/logo.jpeg' %}" height="100" width="100" >
+<center><h1>AGS</h1>
+{% block content %}{% endblock %}
+<h6>copyright-2023</h6>
+</center>
+</body>
+</html>

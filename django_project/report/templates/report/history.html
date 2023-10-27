@@ -1,0 +1,24 @@
+{% extends 'report/base.html' %}
+    {% block content %}
+    <h1>namsthe history</h1>
+    <table>
+        <tr>
+       <th>noc   </th>
+       <th>pdate  </th>
+       <th>mop  </th>
+       <th>amount  </th>
+       <th>artcategory </th>
+        </tr>
+    {% for w in works %}
+
+        <tr>
+      <td><h3>{{ w.noc }}</h3></td>
+      <td><h3>{{ w.pdate }}</h3></td>
+      <td><h3>{{ w.mop }}</h3></td>
+      <td><h3>{{ w.amount }}</h3></td>
+      <td><h3>{{ w.artcategory }}</h3></td>
+        </tr>
+    </table>
+
+    {% endfor %}
+    {% endblock %}
